@@ -5,3 +5,20 @@
 
 @import "../_sass/materialize";
 
+.header {
+  padding-top: 50px;
+}
+
+.circle-icon-link {
+  display: inline-block;
+  padding: .938rem;
+  margin: .125rem;
+  border-radius: 50%;
+  border: .2rem solid black;
+  line-height: 0;
+  transition: all .7s;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
