@@ -23,6 +23,20 @@
   }
 }
 
+
+footer.page-footer {
+  padding-top: 0px;
+  .circle-icon-link {
+    padding: .3rem;
+    color: white;
+    svg {
+      color: white;
+      width:15px;
+      height:15px;
+    }
+  }
+}
+
 .link-icon {
   display: inline-block;
   border-radius: 50%;

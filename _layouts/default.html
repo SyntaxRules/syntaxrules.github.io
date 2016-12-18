@@ -15,36 +15,9 @@
 
 {% include svg-icons.html %}
 
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Articles</a></li>
-            <li><a href="badges.html">Projects</a></li>
-            <li><a href="collapsible.html">More</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Articles</a></li>
-            <li><a href="badges.html">Projects</a></li>
-            <li><a href="collapsible.html">More</a></li>
-        </ul>
-    </div>
-</nav>
+{% include nav.html %}
 
-{% include splash.html %}
-
-
-
-<div class="container">
-
-    {{ content }}
-
-    {% include articles.html limit=5 %}
-
-    {% include projects.html %}
-
-</div>
+{{ content }}
 
 {% include footer.html %}
 
