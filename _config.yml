@@ -30,6 +30,28 @@ sass:
 # Build settings
 markdown: kramdown
 
+
+# projects in header index
+projects:
+  - name: asciilang
+    url: https://github.com/victorvoid/asciilang
+  - name: vim-frontend
+    url: https://github.com/victorvoid/vim-frontend
+  - name: generator-capybara
+    url: https://github.com/victorvoid/generator-capybara
+
+media_link:
+  - name: email
+    url: mailto:me@SyntaxRules.com
+  - name: google-plus
+    url: google.com
+  - name: github-alt
+    url: https://github.com/SyntaxRules
+#  - name: twitter
+#    url: me@SyntaxRules.com
+  - name: rss
+    url: /feed.xml
+
 gems:
   - jekyll-feed
 exclude:

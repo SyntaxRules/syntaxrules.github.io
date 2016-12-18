@@ -6,33 +6,13 @@
                  src="https://avatars1.githubusercontent.com/u/4117657?v=3&s=460"/>
         </div>
         <div class="col s1">
-            <!--TODO: Change this into a config option-->
-            <a class="circle-icon-link" href="#">
-                <svg class="icon icon-rss">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use>
+            {% for link in site.media_link %}
+            <a class="circle-icon-link" href="{{link.url}}">
+                <svg class="icon icon-{{link.name}}">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-{{link.name}}"></use>
                 </svg>
             </a>
-            <!--<a class="circle-icon-link" href="#">-->
-            <!--<svg class="icon icon-rss">-->
-            <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>-->
-            <!--</svg>-->
-            <!--</a>-->
-            <a class="circle-icon-link" href="#">
-                <svg class="icon icon-rss">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google-plus"></use>
-                </svg>
-            </a>
-            <a class="circle-icon-link" href="#">
-                <svg class="icon icon-rss">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github-alt"></use>
-                </svg>
-            </a>
-            <a class="circle-icon-link" href="#">
-                <svg class="icon icon-rss">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-rss"></use>
-                </svg>
-            </a>
-
+            {% endfor %}
         </div>
     </div>
     <div class="row">
