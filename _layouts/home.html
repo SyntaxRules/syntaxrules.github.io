@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include splash.html %}
+
+<div class="container">
+
+    {{ content }}
+
+    {% include articles.html limit=5 %}
+
+    {% include projects.html %}
+
+</div>
