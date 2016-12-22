@@ -1,7 +1,7 @@
 <section id="articles" class="articles">
     <div class="collection">
         {% for post in site.posts limit:include.limit %}
-        <a class="collection-item" href="{{ post.url | prepend: site.url }}">
+        <a class="collection-item" href="{{ post.url | relative_url }}">
             <p class="post-link">{{ post.title | escape }}</p>
             <p class="post-meta gray-text text-lighten-2">
                 {{ post.date | date: "%b %-d, %Y" }}
