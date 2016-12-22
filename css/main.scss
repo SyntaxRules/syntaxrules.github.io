@@ -21,7 +21,11 @@ $error-color: color("red", "base") !default;
 
 @import "../_sass/materialize";
 
+html,
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* needed for container min-height */
   //color: $primary-color-dark;
 }
 
@@ -43,8 +47,22 @@ body {
   }
 }
 
+div#container {
+  position: relative; /* needed for footer positioning*/
+  height: auto !important; /* real browsers */
+  min-height: 100%; /* real browsers */
+}
+
+div#content {
+  //Ensure the footer doesn't cut off the content.
+  padding-bottom: 50px;
+}
 
 footer.page-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; /* stick to bottom */
+
   padding-top: 0px;
   .circle-icon-link {
     padding: .3rem;
