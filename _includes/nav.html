@@ -3,14 +3,14 @@
         <a href="{{ site.url }} {{ site.baseurl }}" class="brand-logo">SyntaxRules</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="/articles.html">Articles</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/consulting.html">Consulting</a></li>
+            {% for page in site.nav_pages %}
+            <li><a href="{{ page.permalink }}">{{page.name}}</a></li>
+            {% endfor %}
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="/articles.html">Articles</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/consulting.html">Consulting</a></li>
+            {% for page in site.nav_pages %}
+            <li><a href="{{ page.permalink }}">{{page.name}}</a></li>
+            {% endfor %}
         </ul>
     </div>
 </nav>

@@ -52,6 +52,14 @@ media_link:
   - name: rss
     url: /feed.xml
 
+nav_pages:
+  - name: Atricles
+    permalink: /articles.html
+  - name: Projects
+    permalink: /projects.html
+  - name: Consulting
+    permalink: /consulting.html
+
 gems:
   - jekyll-feed
 exclude:
