@@ -1,14 +1,14 @@
-<h2>Projects</h2>
-<ul class="collection">
+<div class="collection">
     {% for project in site.projects limit:include.limit%}
-    <li class="collection-item">
-        <a class="post-link" href="{{ project.url | relative_url }}">
+    <a class="collection-item" href="{{ project.url }}">
+        <span class="post-link">
             <svg class="link-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github-alt"></use>
             </svg>
-            {{ project.name | escape }}</a>
-        <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
-        <a href="{{ project.url | relative_url }}" class="secondary-content"><i class="material-icons">trending_flat</i></a>
-    </li>
+            {{ project.name | escape }}
+        </span>
+        <!--<span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>-->
+        <span class="secondary-content"><i class="material-icons">trending_flat</i></span>
+    </a>
     {% endfor %}
-</ul>
+</div>

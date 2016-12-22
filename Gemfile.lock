@@ -48,7 +48,6 @@ DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
-  rouge (~> 1.10, >= 1.10.1)
 
 RUBY VERSION
    ruby 2.3.1p112

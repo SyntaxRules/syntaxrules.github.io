@@ -43,8 +43,8 @@ projects:
 media_link:
   - name: email
     url: mailto:me@SyntaxRules.com
-  - name: google-plus
-    url: google.com
+#  - name: google-plus
+#    url: google.com
   - name: github-alt
     url: https://github.com/SyntaxRules
 #  - name: twitter
