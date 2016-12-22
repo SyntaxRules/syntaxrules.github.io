@@ -4,4 +4,4 @@ title: Consulting
 permalink: /consulting.html
 ---
 
-See some of my work at the [project page](/[projects.html).
+See some of my work at the [project page](/projects.html).
