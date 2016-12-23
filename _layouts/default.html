@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | normalize_whitespace | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <title>{{ page.title }} - {{ site.title }}</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Important links-->
     <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/main.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape}}" href="{{ "/feed.xml" | relative_url }}" />
 </head>
 <body>
 {% include svg-icons.html %}
@@ -27,7 +32,7 @@
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="{{ site.path }}/js/materialize.js"></script>
+<script src="{{ site.path }}/js/materialize.min.js"></script>
 <script src="{{ site.path }}/js/index.js"></script>
 
 </body>
