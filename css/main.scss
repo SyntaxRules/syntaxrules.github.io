@@ -94,3 +94,9 @@ footer.page-footer {
     color: lighten($collection-link-color, 20%);
   }
 }
+
+.post {
+  ul li {
+    list-style-type: disc;
+  }
+}
