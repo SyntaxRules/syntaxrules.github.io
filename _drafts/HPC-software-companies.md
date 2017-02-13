@@ -19,4 +19,4 @@ Someone has to maintain them....
 | Name | Location | Tagline |
 | ---- | -------- | ------- |
 | [WHOI](http://www.whoi.edu/jobs/) | MA or RI, USA | Woods Hole Oceanographic Institute |
-| | |
+| [UofO](http://careers.uoregon.edu/cw/en-us/job/519703/research-systems-and-applications-administrator) | Oregon | Cluster management |
