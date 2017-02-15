@@ -11,7 +11,8 @@ Using centos 7.x you'll need to edit two files (both in the compute node image a
 
 Where $CHROOT is the location to your image. Edit the files like so:
 
-Edit $CHROOT/etc/pam.d/password-auth: 
+Edit $CHROOT/etc/pam.d/password-auth:
+
 ```
 account     required      pam_unix.so
 account     required      pam_slurm.so  # Add this line, below pam_unix.so, but above everything else
@@ -20,7 +21,8 @@ account     sufficient    pam_succeed_if.so uid < 500 quiet
 account     required      pam_permit.so 
 ```
 
-Edit $CHROOT/etc/security/access.conf: 
+Edit $CHROOT/etc/security/access.conf:
+
 ```
 # All other users should be denied to get access from all sources. 
 + : root : ALL    # Uncomment or add this line at the bottom of the file
@@ -30,6 +32,7 @@ Edit $CHROOT/etc/security/access.conf:
 Now rebuild and apply your image/vnfs to the nodes. (Not covered here.)
 
 Test it out:
+
 ```
 [sr@sms ~]$ ssh compute-1
 Access denied: user sr (uid=1) has no active jobs on this node.
