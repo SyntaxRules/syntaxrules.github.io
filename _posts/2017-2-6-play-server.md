@@ -18,7 +18,7 @@ For my purposes, here's what I need:
 
 So where do you start? How to find that perfect, cheap, server? I started my search on google, and quickly found [Server Monkey](http://www.servermonkey.com/), a seller of refurbished servers. This is a great way to get a cheap, garenteed to work server. You can get a pretty decient setup there for about $100.
 
-However, you can go even cheaper. Look through Server Monkey, find what they sell for cheap, then head over to [Ebay](www.ebay.com). You'll often find various configurations of these servers on e-bay for (sometimes) a fraction of the cost.
+However, you can go even cheaper. Look through Server Monkey, find what they sell for cheap, then head over to [Ebay](http://www.ebay.com). You'll often find various configurations of these servers on e-bay for (sometimes) a fraction of the cost.
 
 ## What I got, what I paid
 
