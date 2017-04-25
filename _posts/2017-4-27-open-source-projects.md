@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Launching a successful open source project"
+title:  "A Successful Open Source Project"
 tags: hpc software
 ---
 
 # A Successful Open Source Project
 
-Its all too common for people and companies today to put some portion of their software (aka code) on GitHub and subsequently claim they are using open source practices. Perhaps this is due to the term "open source" being used as a buzz word for management. The US government even went as far as to [mandate that 20% of its code must be open source](https://sourcecode.cio.gov/). Releasing code like this is a step in the right direction, but to truly reap the benefits of open source more effort is required.
+Its all too common for people and companies today to put some portion of their software (aka code) on GitHub and subsequently claim they are using open source practices. Perhaps this is due to the term "open source" being used as a buzz word that get management excited. Releasing code like this is a step in the right direction, but to truly reap the benefits of open source more effort is required.
 
 When creating or selecting an open source project/library/tool there are a few certain things I always look for. Here's my list of things that every open source project should have.
 
@@ -22,10 +22,17 @@ This is one of the easiest ways to know if this is a serious open source project
 ## 3. CI badges
 These badges give users confidence that future releases and fixes wont be broken. Things like documentation badges, CI badges, and code coverage badges are all fantastic ways to show off the hard work of developers. Here are a few badges I recommend:
 
-> Image of CI badges
+![github badges](/img/github-badges.png)
+
+A great list of badges can be found at: [http://shields.io/](http://shields.io/)
 
 ## 4. A Package manager
-Python has PIP, node.js has NPM, and C# has [nuget](https://www.nuget.org/). Users know using a package manager will make their life a lot easier. Developers should strive to support at least one, more if applicable. This will simplify installation instructions and increase project visibility. (Google will find a few pages referencing your project.)
+Python has [PIP](https://pypi.python.org/pypi), node.js has [NPM](https://www.npmjs.com/), and C# has [nuget](https://www.nuget.org/). Users know using a package manager will make their life a lot easier. Developers should strive to support at least one, more if applicable. This will simplify installation instructions and increase project visibility. (Google will find a few pages referencing your project.)
 
-10 Things to do, to get your open source project looked at:
-3. Issues and pull requests. If you have these and I'm thinking about using your library, I'll probably look at them. If they are long lasting bugs, thats bad, if they are well structured ehancements, thats good.
+# Conclusion
+
+Maintaining a nice looking repo will get your code more views and put you on a path with devoted community members.
+
+# References
+
+[The US goverment mandates that 20% of its code must be open source](https://sourcecode.cio.gov/).
