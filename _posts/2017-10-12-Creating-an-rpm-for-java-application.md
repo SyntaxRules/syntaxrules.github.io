@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Creating an RPM for a Java Application"
+tags: software java rpm
+---
 # Creating an RPM for a Java Application
 
 Herein lays an example of creating an RPM for Java Applications with Gradle.
