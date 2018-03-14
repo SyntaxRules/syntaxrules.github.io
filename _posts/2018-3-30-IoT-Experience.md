@@ -50,6 +50,12 @@ IoT is still very fragmentted- which makes adopting a IoT based solution difficu
   
 Why the fragmentation? There are a number of standards that have attempted to fix this, but they all end up in line with [this xkcd comic](https://xkcd.com/927/). 
 
+## Creating an IoT Edge Device
+
+Anaylsis engine >> Gateway >Usb/Wifi> Sensor
+
+
+
 One major problem of IoT solutions is power. IoT devices take power, and adding power homes or factories where it was not orgionally intended is hard. Batteries are not much better, current Wifi devices only last a matter of months before requiring the battery to be changed. More conservitive frameworks, like Z-Wave can last up to two years. 
  
  
