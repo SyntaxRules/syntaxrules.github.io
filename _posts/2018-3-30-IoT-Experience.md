@@ -60,34 +60,46 @@ We could replace this mundane job with an automated one be reporting back the am
 
 ## Creating an IoT Edge Device
 
-### Porotyping
+### Porotyping and Desiging the Schematic
+
+#### Selecting the right chips
 
 For IoT devices you want to select a chip that fullfill your requirements and has low power consumption. For this one I needed 3 things:
   1. USB connectivity
   2. Sensor Connectivity (I decided on using I2C to talk to the sensor)
   3. Power below 100ma (max spike)
 
-You can start in many ways:
-  1. Use a raspberry pi. For my case, the raspberry pi was overkill. It drew too much power, had extra features I didn't need, and was too costly. However, the resberry pi is a stable platform to
+#### Getting software
 
-I got sample boards and development tools for Atmel and Microchip (they recently merged), and tried "hello world" applications on both to see which would be easier to use. A breradboard was particuallrly useful for this.
+For my time, I used Diptrace. Diptrace is a combination of a schematic editor and PCB editor. I highly recommend a tool that does both. A newer, free, tool is KiCad which has similar functionality. The important thing for selecting your editing software is that it can check connectivity from your schematic to your PCB.
+
+#### Start testing
+
+Once you have a general idea of the chips you think you need, get a few and test them out. Breakout boards and sample code are especially helpful. You can find implementation suggestions in the datasheet for most chips. Companies like [Adafruit](https://www.adafruit.com/) provide a good deal of help in this phase of this project.
+
+You can also get sample chips from some companies, this helps keep the price low. I got sample boards and development tools for Atmel and Microchip (they recently merged).
+
+You can test individual chips with an Arduino board, a Raspberry Pi board, or via  breadboard. For my application a Raspberry Pi board was to large, Arduino was good for testing individual sensors and a breakout board worked perfectly for integrating sensors with my microcontroller.
 
 > Suprisingly Intel is not in the space of creating chips below 32 bits and has a hard time competing with the low power consumption of the 8 bit chips I was using.
 
-
-Selecting chips, Samples, prototype on breadboards. Arduino, Raspeberry Pi.
-
-### Designing the Schematic
-
-Diptrace, EagleSoft, KiCad
+You'll need a handfull of resistors and capacitors, multimeter, some soldering equiptment... check out a video on [about setting up a workspace at the EEVBlog.](https://youtu.be/HicV3Z6XLFA) *You probably don't need a ocilliscope to start, contrary to what the video recommends.*
 
 ### Designing the PCB
 
-Choosing "Packages", connectors, revising schematic.
+I learned a lot about how to design a PCB from a youtube chanel called the EEVBlog. There is an insanley informative video on there about [designing your PCB for manufacture](https://youtu.be/VXE_dh38HjU).
+
+One thing I did to double check my work was to print out my PCB and place all the components on the printout. This helped me check for clearances. This practice worked well for my small boards, and saved me a messed up production run more than once.
+
+Again datasheets have requirements for PCB placement, be sure to follow these recommendations!
 
 ### Prototype runs
 
-Board, Stencil
+You can see a video on how PCB are made (in the factory) [on the EEVBlog on youtube](https://youtu.be/rEB0pl8a5C0).
+
+To make a small production board you will need a PCB, components that go on it, a stencil, solder paste, and a hotplate or oven of some type.
+
+Here is how Sparkfun uses the [hotplate to create devices](https://www.sparkfun.com/tutorials/59).
 
 ### Production Runs
 
