@@ -50,7 +50,52 @@ IoT is still very fragmentted- which makes adopting a IoT based solution difficu
   
 Why the fragmentation? There are a number of standards that have attempted to fix this, but they all end up in line with [this xkcd comic](https://xkcd.com/927/). 
 
+## My Experience
+
+As I mentioned before, I spent about 6 months working on a few IoT devices for Intel. Intel was having a problem with there chemical cabinets that fed checmicals to the factory. These ecabinets routinely needed to be refilled. If a checmical ran out the fab would have to shut down while it was refilled. Non of these cabinet had the ability to report how much chemical was left, so it required a person to check these cabinets. This is expensive and maybe the worst job ever (Imagine walking to hundreds of cabients a day just to record readings off them).
+
+Enter IoT devices.
+
+We could replace this mundane job with an automated one be reporting back the amount of chemical left in a cabinet.
+
 ## Creating an IoT Edge Device
+
+### Porotyping
+
+For IoT devices you want to select a chip that fullfill your requirements and has low power consumption. For this one I needed 3 things:
+  1. USB connectivity
+  2. Sensor Connectivity (I decided on using I2C to talk to the sensor)
+  3. Power below 100ma (max spike)
+
+You can start in many ways:
+  1. Use a raspberry pi. For my case, the raspberry pi was overkill. It drew too much power, had extra features I didn't need, and was too costly. However, the resberry pi is a stable platform to
+
+I got sample boards and development tools for Atmel and Microchip (they recently merged), and tried "hello world" applications on both to see which would be easier to use. A breradboard was particuallrly useful for this.
+
+> Suprisingly Intel is not in the space of creating chips below 32 bits and has a hard time competing with the low power consumption of the 8 bit chips I was using.
+
+
+Selecting chips, Samples, prototype on breadboards. Arduino, Raspeberry Pi.
+
+### Designing the Schematic
+
+Diptrace, EagleSoft, KiCad
+
+### Designing the PCB
+
+Choosing "Packages", connectors, revising schematic.
+
+### Prototype runs
+
+Board, Stencil
+
+### Production Runs
+
+## Results of my experience
+
+We did some back of the envelope calculations for my use case, at $10 a sensor, with full deployment across 
+
+power consumption: ~33ma when active
 
 Anaylsis engine >> Gateway >Usb/Wifi> Sensor
 
